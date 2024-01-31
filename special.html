@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Card</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+  <style>
+    body {
+      /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+      margin: 0; /* Remove default margin */
+      font-family: 'Arial', sans-serif; /* Add a fallback font */
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .book {
+      position: fixed;
+      border-radius: 10px;
+      width: 80vw; /* Adjusted for better mobile view */
+      max-width: 300px; /* Set a max-width for larger screens */
+      height: 80vh; /* Adjusted for better mobile view */
+      background-image: url('pic4.jpg');
+      color: rgb(166, 149, 166);
+      font-family: "Sofia", sans-serif;
+      background-size: cover;
+      background-position: center;
+      background-size: 90%;
+      box-shadow: 1px 1px 12px #000;
+      transform: preserve-3d;
+      perspective: 2000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px; /* Add some margin for better spacing */
+    }
+
+    .cover {
+      top: 0;
+      position: absolute;
+      /* background-color: #4158D0; */
+      background-image: url('pic3.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      color: beige;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.5s;
+      transform-origin: 0;
+      box-shadow: 1px 1px 12px #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      opacity: 0.2;
+    }
+    video:hover {
+       opacity: 0.5;
+    }
+.s{
+  display: none;
+ 
+}
+
+h2:hover .s {
+  display: block;
+}
+    .book:hover .cover {
+      transition: all 0.5s;
+      transform: rotatey(-85deg);
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="book">
+      <h3 class="font-effect-outline" style=" font-size: 25px;margin-left: 5%; margin-top: -75%;">Happy Birthday!</h3>
+      <h2 class="font-effect-neon" style="font-size: 25px; color: rgb(189, 126, 183); margin-left: 35%; margin-top: -10%">
+          Kanna&#128151;          <p class="s" style="margin-right: -50%;">I love you raa🫂</p>
+      </h2>
+      <br><br><br><br><br><br><br>
+      <video style="position: fixed; margin-bottom:-110%;" width="100%" height="180%" controls>
+        <source src="vedio.mp4" type="video/mp4">
+        <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
+      </video>
+      <div class="cover">
+        <h1 class="font-effect-fire" style="color:black; font-size:40px; margin-top:0%; margin-right: 10%;">Surprise!</h1> <br>
+        <p class="font-effect-outline" style="color: rgb(178, 176, 176); font-size:28px; margin-left: 3%">Hope you &#128151; the </p> 
+        <p class="font-effect-shadow-multiple" style="color: rgb(247, 245, 138); font-size:30px; margin-top: -10%;">surprise</p> 
+        <p class="font-effect-outline" style="font-size: 28px; margin-top: -10%; color: rgb(178, 176, 176);">inside this card!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
